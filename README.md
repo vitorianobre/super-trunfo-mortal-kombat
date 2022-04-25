@@ -33,7 +33,7 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 🚧 Projeto
 
-Live Preview: <a target="_blank" href="#"></a>
+Live Preview: <a target="_blank" href="https://super-trunfo-mortal-kombat.vercel.app/">https://super-trunfo-mortal-kombat.vercel.app/</a>
 
 <img src="assets/preview-home.png" style="max-height: 350px;">
 
