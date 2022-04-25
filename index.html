@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super-Trunfo Mortal Kombat</title>
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/pt/0/0f/Mortal_kombat_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal-rules.css">
+    <link rel="stylesheet" href="modal-cards.css">
+</head>
+<body>
+    <header id="cabecalho">
+        <img src="https://www.pngmart.com/files/17/Mortal-Kombat-Logo-PNG-Free-Download.png" alt="Logo Mortal Kombat" id="logo">
+        <button class="btn-cabecalho" onclick="abrirModalRules()"><img src="assets/logo-regras.png" alt="">Regras</button>
+
+        <!-- Modal Rules -->
+        <div id="myModal-rules" class="modal-rules">
+            <!-- Modal content -->
+            <div class="modal-content-rules">
+                <div class="modal-header-rules">
+                    <span class="close">&times;</span>
+                    <span class="modal-title-rules">
+                        <img src="assets/logo-regras.png" alt="">
+                        <h2>Regras</h2>
+                    </span>
+                </div>
+                <div class="modal-body-rules" id="modal-text-rules">- O jogo baseia-se na comparação dos valores de sua carta com a do outro jogador. Para sua carta vencer, a característica escolhida precisa ter valor maior do que a carta do seu adversário. <br>
+                    - Se você vencer a carta do outro jogador irá para o seu monte de cartas. <br>
+                    - Se o outro jogador vencer sua carta irá para o monte de cartas do adversário. <br>
+                    - Em caso de empate ambos permanecem com suas respectivas cartas.</div>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <nav>
+            <button id="btn-jogar" onclick="jogar()">Jogar</button>
+            <button id="btn-cartas" onclick="verCartas()">Minhas Cartas</button>
+        </nav>
+
+        <!-- Modal Cards -->
+        <div id="myModal-cards" class="modal-cards">
+            <!-- Modal content -->
+            <div class="modal-content-cards">
+                <div class="modal-header-cards">
+                    <span class="close">&times;</span>
+                    <span class="modal-title-cards">
+                        <h2>Minhas Cartas</h2>
+                    </span>
+                </div>
+                <div class="modal-body-cards" id="modal-body-cards"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        Desenvolvido por <a href="https://github.com/vitorianobre" target="_blank">Vitoria Nobre &#x2764;</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

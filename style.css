@@ -1,0 +1,269 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap');
+
+:root {
+    --principal: #F2CB05;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0d0d0dee;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.692), rgba(0, 0, 0, 0.692)), url("https://images.alphacoders.com/113/thumb-1920-1136691.jpeg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Header */
+
+header {
+    height: 150px;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    max-width: 170px;
+}
+
+.btn-cabecalho {
+    width: 90px;
+    height: 40px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: transparent;
+    border: none;
+    border-radius: 2px;
+
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    color: var(--principal);
+    cursor: pointer;
+}
+
+.btn-cabecalho > img {
+    height: 25px;
+}
+
+/* Main */
+
+nav {
+    height: calc(100vh / 2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav > button {
+    width: 150px;
+    margin: 20px;
+    padding: 5px;
+    background-color: transparent;
+    border: 1px solid var(--principal);
+    border-radius: 5px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    color: var(--principal);
+    cursor: pointer;
+}
+
+nav > button:hover {
+    background-color: #f2cb0515;
+}
+
+.exibirCard {
+    max-height: 200px;
+    margin: 10px 10px;
+}
+
+/* Game */
+
+.text {
+    margin-left: 50px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    color: var(--principal);
+}
+
+#game {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#game p {
+    margin: 0 0 5px 10px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    color: var(--principal);
+}
+
+#habilidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#habilidades p {
+    font-size: 15px;
+}
+
+.btn-habilidades {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 20px 2px 20px;
+    padding: 5px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-habilidades:focus {
+    border: 1px solid var(--principal);
+    color: var(--principal);
+}
+
+#combater {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 5px;
+    background-color: transparent;
+    border: 1px solid var(--principal);
+    border-radius: 5px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--principal);
+    cursor: pointer;
+}
+
+#combater:hover {
+    background-color: #f2cb0515;
+}
+
+#placar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+fieldset {
+    width: 150px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--principal);
+    border-radius: 5px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 35px;
+    color: var(--principal);
+}
+
+/* Resultado */
+
+#resultado {
+    min-width: 20px;
+    width: 300px;
+    margin: 20px 15px;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--principal);
+    border-radius: 5px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 23px;
+    color: var(--principal);
+}
+
+#resultado button {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 5px;
+    background-color: transparent;
+    border: 1px solid var(--principal);
+    border-radius: 5px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    color: var(--principal);
+}
+
+#valores {
+    width: 220px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#proxima-rodada {
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid var(--principal);
+    border-radius: 5px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--principal);
+    cursor: pointer;
+}
+
+#proxima-rodada:hover {
+    background-color: #f2cb0515;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    bottom: 8px;
+    margin-top: 10px;
+
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+    font-size: 13px;
+    color: var(--principal);
+}
+
+footer > a {
+    color: var(--principal);
+    font-weight: normal;
+    text-decoration: none;
+}
